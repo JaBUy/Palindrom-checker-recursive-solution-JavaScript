@@ -4,10 +4,10 @@ function palindromeChecker(str) {
   
   //recursive function solution
 
-  //base case -> one evaluating one char or two identical chars
+  //base case -> evaluating for one char or two identical chars, therefore true
   if (formattedStr.length == 1 || (formattedStr.length == 2 && formattedStr[0] == formattedStr[1])) {
     return true;
-  //checking for false palindrome when first char != last char in string
+  //checking for false palindrome when first char != last char in string, therefore false
   } else if (formattedStr[0] != formattedStr[formattedStr.length-1]) {
     return false;
   //recursive case -> return same func with parameter minus first and last char  
